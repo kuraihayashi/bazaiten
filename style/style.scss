@@ -60,34 +60,50 @@ header{
            border-top-right-radius: 20px;
            padding-left: 15px;
            
+             
+       }
+
+       input:focus{
+        outline: -webkit-focus-ring-color auto 0;
+        transition: all 20s ease-in;
+      }
+       
+       input.login{
+           top: 170px;
            
        }
-       .login{
-           top: 170px;
-       }
-       .password{
+       input.password{
            top: 250px;
        }
+
        i{
            position: absolute;
-           padding: 15px 10px;
+           padding: 15px 11px;
+           margin-top: 1px;
+           margin-bottom: 1px; 
            background-color:$blue;
            display: none;
-           border-top: 1px solid $gray;
-           border-bottom: 1px solid $gray;
+           border: black solid 0;
            border-bottom-left-radius: 20px;
-           
+           font-size: 20px;
         }
         i.fa-user{
-            font-size: 20px;
+            
             top:170px;
             left: 10px;
-    
+            
+        }
+        input.login:focus+i.fa-user{
+            display: block;
+            left: 52px;
         }
         i.fa-key{
-            font-size: 20px;
             top:250px;
             left: 10px;
+        }
+        input.password:focus+i.fa-key{
+            display: block;
+            left: 53px;
         }
         .js{
              display: block;
@@ -110,7 +126,8 @@ header{
         border-bottom-left-radius: 20px;
         border-bottom-right-radius: 20px;
         border-top-left-radius: 20px;
-        border-top-right-radius: 20px;
+        border-top-right-radius: 20px; 
+        transition: .5s;
        p{
         font-weight: 300;
         font-size: 18px;
@@ -121,4 +138,14 @@ header{
 
        }
    }
+   button:hover{
+        width: 185px;
+        background-color: $blue;
+        color: $gray;
+        border: 1px solid $light-gray;
+   }
+   button:focus{
+    outline: -webkit-focus-ring-color auto 0;
+  }
+   
     }}}

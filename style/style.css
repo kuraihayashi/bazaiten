@@ -61,34 +61,50 @@ header div.header div.panel form input {
   padding-left: 15px;
 }
 
-header div.header div.panel form .login {
+header div.header div.panel form input:focus {
+  outline: -webkit-focus-ring-color auto 0;
+  -webkit-transition: all 20s ease-in;
+  transition: all 20s ease-in;
+}
+
+header div.header div.panel form input.login {
   top: 170px;
 }
 
-header div.header div.panel form .password {
+header div.header div.panel form input.password {
   top: 250px;
 }
 
 header div.header div.panel form i {
   position: absolute;
-  padding: 15px 10px;
+  padding: 15px 11px;
+  margin-top: 1px;
+  margin-bottom: 1px;
   background-color: royalblue;
   display: none;
-  border-top: 1px solid #252835;
-  border-bottom: 1px solid #252835;
+  border: black solid 0;
   border-bottom-left-radius: 20px;
+  font-size: 20px;
 }
 
 header div.header div.panel form i.fa-user {
-  font-size: 20px;
   top: 170px;
   left: 10px;
 }
 
+header div.header div.panel form input.login:focus + i.fa-user {
+  display: block;
+  left: 52px;
+}
+
 header div.header div.panel form i.fa-key {
-  font-size: 20px;
   top: 250px;
   left: 10px;
+}
+
+header div.header div.panel form input.password:focus + i.fa-key {
+  display: block;
+  left: 53px;
 }
 
 header div.header div.panel form .js {
@@ -112,6 +128,8 @@ header div.header div.panel button {
   border-bottom-right-radius: 20px;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
+  -webkit-transition: .5s;
+  transition: .5s;
 }
 
 header div.header div.panel button p {
@@ -121,5 +139,16 @@ header div.header div.panel button p {
   padding: 0px;
   text-transform: uppercase;
   margin: 7px;
+}
+
+header div.header div.panel button:hover {
+  width: 185px;
+  background-color: royalblue;
+  color: #252835;
+  border: 1px solid #535353;
+}
+
+header div.header div.panel button:focus {
+  outline: -webkit-focus-ring-color auto 0;
 }
 /*# sourceMappingURL=style.css.map */
