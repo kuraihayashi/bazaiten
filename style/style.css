@@ -1,0 +1,85 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  background-image: url(../images/cup-of-coffee-1280537_1920.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+header div.header {
+  position: relative;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+header div.header div.panel {
+  border-top: 2px solid royalblue;
+  font-family: 'Hind Guntur', sans-serif;
+  height: 500px;
+  width: 400px;
+  background-color: #252835;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+header div.header div.panel div.tittle h1 {
+  font-weight: 500;
+  font-size: 36px;
+  text-align: center;
+  padding-top: 65px;
+  color: #8b8b8b;
+}
+
+header div.header div.panel form input {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  display: block;
+  height: 50px;
+  width: 280px;
+  border-left: none;
+  border-right: none;
+  border-top: 1px solid #535353;
+  border-bottom: 1px solid #535353;
+  background-color: #5B5E6F;
+  border-bottom-left-radius: 20px;
+  border-top-right-radius: 20px;
+  padding-left: 15px;
+}
+
+header div.header div.panel form .login {
+  top: 170px;
+}
+
+header div.header div.panel form .password {
+  top: 250px;
+}
+
+header div.header div.panel button {
+  position: absolute;
+  top: 400px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 170px;
+}
+
+header div.header div.panel button p {
+  font-weight: 300;
+  font-size: 18px;
+  text-align: center;
+  padding: 0px;
+  text-transform: uppercase;
+  margin: 7px;
+}
+/*# sourceMappingURL=style.css.map */
