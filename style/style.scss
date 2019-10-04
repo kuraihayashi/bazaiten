@@ -31,6 +31,9 @@ header{
             padding-top: 65px;
             // text-transform: uppercase;
             color: #8b8b8b;
+            border-bottom: 1px solid royalblue;
+            width: 250px;
+            margin: 0 auto;
             }
         }
    form{
@@ -47,10 +50,12 @@ header{
            border-bottom: 1px solid #535353;
            background-color: #5B5E6F;
            border-bottom-left-radius: 20px;
-        //    border-bottom-right-radius: 15px;
-        //    border-top-left-radius: 15px;
+           border-bottom-right-radius: 20px;
+        //    border-top-left-radius: 20px;
            border-top-right-radius: 20px;
            padding-left: 15px;
+           
+           
        }
        .login{
            top: 170px;
@@ -59,8 +64,33 @@ header{
            top: 250px;
        }
        i{
+           position: absolute;
+           padding: 15px 10px;
+           background-color:royalblue;
+           display: none;
+           border-top: 1px solid #535353;
+           border-bottom: 1px solid #535353;
+           border-bottom-left-radius: 20px;
+           
         }
-   } 
+        i.fa-user{
+            font-size: 20px;
+            top:170px;
+            left: 10px;
+    
+        }
+        i.fa-key{
+            font-size: 20px;
+            top:250px;
+            left: 10px;
+        }
+        .js{
+             display: block;
+             left: 53px;
+         }
+    }
+   
+       
    button{
        position: absolute;
        top: 400px;
@@ -77,4 +107,4 @@ header{
 
        }
    }
-}}}
+    }}}
