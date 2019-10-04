@@ -33,12 +33,12 @@ header div.header div.panel {
 
 header div.header div.panel div.tittle h1 {
   font-weight: 500;
-  font-size: 36px;
+  font-size: 28px;
   text-align: center;
   padding-top: 65px;
   color: #8b8b8b;
   border-bottom: 1px solid royalblue;
-  width: 250px;
+  width: 320px;
   margin: 0 auto;
 }
 
@@ -74,8 +74,8 @@ header div.header div.panel form i {
   padding: 15px 10px;
   background-color: royalblue;
   display: none;
-  border-top: 1px solid #535353;
-  border-bottom: 1px solid #535353;
+  border-top: 1px solid #252835;
+  border-bottom: 1px solid #252835;
   border-bottom-left-radius: 20px;
 }
 
@@ -98,11 +98,20 @@ header div.header div.panel form .js {
 
 header div.header div.panel button {
   position: absolute;
-  top: 400px;
+  cursor: pointer;
+  top: 380px;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   width: 170px;
+  height: 45px;
+  color: royalblue;
+  background-color: #252835;
+  border: 1px solid royalblue;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
 }
 
 header div.header div.panel button p {
