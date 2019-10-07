@@ -3,21 +3,25 @@
   margin: 0;
 }
 
-header {
+body {
+  max-height: 100vh;
+}
+
+body header {
   background-image: url(../images/cup-of-coffee-1280537_1920.jpg);
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: 100vh;
+  height: calc(100vh - 35px);
 }
 
-header div.header {
-  height: 100vh;
+body header div.header {
+  height: calc(100vh - 35px);
   background-color: rgba(0, 0, 0, 0.4);
 }
 
-header div.header div.panel {
+body header div.header div.panel {
   border-top: 2px solid royalblue;
   font-family: 'Hind Guntur', sans-serif;
   height: 500px;
@@ -30,7 +34,7 @@ header div.header div.panel {
           transform: translate(-50%, -50%);
 }
 
-header div.header div.panel form div.tittle h1 {
+body header div.header div.panel form div.tittle h1 {
   font-weight: 500;
   font-size: 28px;
   text-align: center;
@@ -41,7 +45,7 @@ header div.header div.panel form div.tittle h1 {
   margin: 0 auto;
 }
 
-header div.header div.panel form div.user {
+body header div.header div.panel form div.user {
   position: absolute;
   left: 50%;
   -webkit-transform: translateX(-50%);
@@ -50,7 +54,7 @@ header div.header div.panel form div.user {
   overflow: hidden;
 }
 
-header div.header div.panel form div.key {
+body header div.header div.panel form div.key {
   position: absolute;
   left: 50%;
   -webkit-transform: translateX(-50%);
@@ -59,7 +63,7 @@ header div.header div.panel form div.key {
   overflow: hidden;
 }
 
-header div.header div.panel form i {
+body header div.header div.panel form i {
   position: absolute;
   padding: 15px 11px;
   margin-top: 1px;
@@ -75,7 +79,7 @@ header div.header div.panel form i {
   transition: 1s;
 }
 
-header div.header div.panel form input {
+body header div.header div.panel form input {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   height: 50px;
@@ -91,23 +95,23 @@ header div.header div.panel form input {
   color: #252835;
 }
 
-header div.header div.panel form input:focus {
+body header div.header div.panel form input:focus {
   outline: -webkit-focus-ring-color auto 0;
   padding-left: 45px;
   border: 1px royalblue solid;
 }
 
-header div.header div.panel form input.login:focus + i.fa-user {
+body header div.header div.panel form input.login:focus + i.fa-user {
   opacity: 1;
   left: 0;
 }
 
-header div.header div.panel form input.password:focus + i.fa-key {
+body header div.header div.panel form input.password:focus + i.fa-key {
   opacity: 1;
   left: 0;
 }
 
-header div.header div.panel button {
+body header div.header div.panel button {
   position: absolute;
   cursor: pointer;
   top: 380px;
@@ -124,7 +128,7 @@ header div.header div.panel button {
   transition: .5s;
 }
 
-header div.header div.panel button p {
+body header div.header div.panel button p {
   font-weight: 300;
   font-size: 18px;
   text-align: center;
@@ -132,14 +136,31 @@ header div.header div.panel button p {
   margin: 7px;
 }
 
-header div.header div.panel button:hover {
+body header div.header div.panel button:hover {
   width: 185px;
   background-color: royalblue;
   color: #252835;
   border: 1px solid #535353;
 }
 
-header div.header div.panel button:focus {
+body header div.header div.panel button:focus {
   outline: -webkit-focus-ring-color auto 0;
+}
+
+body footer {
+  height: 35px;
+  background-color: #252835;
+  text-align: center;
+}
+
+body footer a {
+  text-decoration: none;
+  color: #8b8b8b;
+  line-height: 35px;
+}
+
+body footer a p {
+  font-size: 18px;
+  font-family: "Hind Guntur", sans-serif;
 }
 /*# sourceMappingURL=style.css.map */

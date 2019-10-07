@@ -3,19 +3,24 @@ $light-gray:#535353;
 $blue: royalblue;
 $font-color:#8b8b8b;
 $background: #5B5E6F;
+$font: 'Hind Guntur', sans-serif;
+
 *{
     padding: 0;
     margin: 0;
 }
+body{
+    max-height: 100vh;
+    
 header{
     background-image: url(../images/cup-of-coffee-1280537_1920.jpg);
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 100vh;
+    height: calc(100vh - 35px);
     div.header{
-    height: 100vh;
+    height: calc(100vh - 35px);
     background-color: rgba(0, 0, 0, 0.4);
     div.panel{
     border-top:2px solid $blue;
@@ -27,6 +32,7 @@ header{
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+    
     form{
         div.tittle{
             h1{
@@ -129,3 +135,19 @@ header{
   }
    
     }}}
+footer{
+    height: 35px;
+    background-color: $gray;
+    text-align: center;
+    a{
+        text-decoration: none;
+        color: $font-color;
+        line-height: 35px;
+        p{
+            font-size: 18px;
+            font-family: $font;
+            
+        }
+    }
+}
+}
