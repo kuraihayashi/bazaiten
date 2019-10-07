@@ -13,7 +13,6 @@ header {
 }
 
 header div.header {
-  position: relative;
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.4);
 }
@@ -31,7 +30,7 @@ header div.header div.panel {
           transform: translate(-50%, -50%);
 }
 
-header div.header div.panel div.tittle h1 {
+header div.header div.panel form div.tittle h1 {
   font-weight: 500;
   font-size: 28px;
   text-align: center;
@@ -42,37 +41,22 @@ header div.header div.panel div.tittle h1 {
   margin: 0 auto;
 }
 
-header div.header div.panel form input {
+header div.header div.panel form div.user {
   position: absolute;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-  display: block;
-  height: 50px;
-  width: 280px;
-  border-left: none;
-  border-right: none;
-  border-top: 1px solid #535353;
-  border-bottom: 1px solid #535353;
-  background-color: #5B5E6F;
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
-  border-top-right-radius: 20px;
-  padding-left: 15px;
-}
-
-header div.header div.panel form input:focus {
-  outline: -webkit-focus-ring-color auto 0;
-  -webkit-transition: all 20s ease-in;
-  transition: all 20s ease-in;
-}
-
-header div.header div.panel form input.login {
   top: 170px;
+  overflow: hidden;
 }
 
-header div.header div.panel form input.password {
+header div.header div.panel form div.key {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
   top: 250px;
+  overflow: hidden;
 }
 
 header div.header div.panel form i {
@@ -81,35 +65,46 @@ header div.header div.panel form i {
   margin-top: 1px;
   margin-bottom: 1px;
   background-color: royalblue;
-  display: none;
+  color: #252835;
   border: black solid 0;
   border-bottom-left-radius: 20px;
+  border-top-left-radius: 20px;
   font-size: 20px;
+  opacity: 0;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
-header div.header div.panel form i.fa-user {
-  top: 170px;
-  left: 10px;
+header div.header div.panel form input {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 50px;
+  width: 270px;
+  border-left: none;
+  border-right: none;
+  border: 1px solid #535353;
+  background-color: #5B5E6F;
+  border-radius: 20px;
+  padding-left: 15px;
+  -webkit-transition: .2s;
+  transition: .2s;
+  color: #252835;
+}
+
+header div.header div.panel form input:focus {
+  outline: -webkit-focus-ring-color auto 0;
+  padding-left: 45px;
+  border: 1px royalblue solid;
 }
 
 header div.header div.panel form input.login:focus + i.fa-user {
-  display: block;
-  left: 52px;
-}
-
-header div.header div.panel form i.fa-key {
-  top: 250px;
-  left: 10px;
+  opacity: 1;
+  left: 0;
 }
 
 header div.header div.panel form input.password:focus + i.fa-key {
-  display: block;
-  left: 53px;
-}
-
-header div.header div.panel form .js {
-  display: block;
-  left: 53px;
+  opacity: 1;
+  left: 0;
 }
 
 header div.header div.panel button {
@@ -124,10 +119,7 @@ header div.header div.panel button {
   color: royalblue;
   background-color: #252835;
   border: 1px solid royalblue;
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
+  border-radius: 20px;
   -webkit-transition: .5s;
   transition: .5s;
 }
@@ -136,7 +128,6 @@ header div.header div.panel button p {
   font-weight: 300;
   font-size: 18px;
   text-align: center;
-  padding: 0px;
   text-transform: uppercase;
   margin: 7px;
 }

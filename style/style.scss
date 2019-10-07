@@ -15,12 +15,11 @@ header{
     background-position: center;
     height: 100vh;
     div.header{
-        position: relative;
-        height: 100vh;
-        background-color: rgba(0, 0, 0, 0.4);
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.4);
     div.panel{
-        border-top:2px solid $blue;
-        font-family: 'Hind Guntur', sans-serif;
+    border-top:2px solid $blue;
+    font-family: 'Hind Guntur', sans-serif;
     height: 500px;
     width: 400px;
     background-color: $gray;
@@ -28,87 +27,73 @@ header{
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+    form{
         div.tittle{
             h1{
             font-weight: 500;
             font-size: 28px;
             text-align: center;
             padding-top: 65px;
-            // text-transform: uppercase;
             color: $font-color;
             border-bottom: 1px solid $blue;
             width: 320px;
             margin: 0 auto;
             }
         }
-   form{
-       input{
-           position: absolute;
-           left: 50%;
-           transform: translateX(-50%);
-           display: block;
-           height: 50px;
-           width: 280px;
-           border-left: none;
-           border-right: none;
-           border-top: 1px solid $light-gray;
-           border-bottom: 1px solid $light-gray;
-           background-color: $background;
-           border-bottom-left-radius: 20px;
-           border-bottom-right-radius: 20px;
-        //    border-top-left-radius: 20px;
-           border-top-right-radius: 20px;
-           padding-left: 15px;
-           
-             
-       }
-
-       input:focus{
-        outline: -webkit-focus-ring-color auto 0;
-        transition: all 20s ease-in;
-      }
-       
-       input.login{
-           top: 170px;
-           
-       }
-       input.password{
-           top: 250px;
-       }
-
-       i{
+        div.user{
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 170px;
+            overflow: hidden;
+        }
+        div.key{
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 250px;
+            overflow: hidden;
+        }
+        i{
            position: absolute;
            padding: 15px 11px;
            margin-top: 1px;
            margin-bottom: 1px; 
            background-color:$blue;
-           display: none;
+           color: $gray;
            border: black solid 0;
            border-bottom-left-radius: 20px;
+           border-top-left-radius: 20px;
            font-size: 20px;
+           opacity: 0;
+           transition:1s;
+       }
+        input{
+            box-sizing: border-box;
+            height: 50px;
+            width: 270px;
+            border-left: none;
+            border-right: none;
+            border: 1px solid $light-gray;
+            background-color: $background;
+            border-radius: 20px;
+            padding-left: 15px;
+            transition: .2s;
+            color: $gray;
         }
-        i.fa-user{
-            
-            top:170px;
-            left: 10px;
-            
-        }
+        input:focus{
+            outline: -webkit-focus-ring-color auto 0;
+            padding-left: 45px;
+            border: 1px royalblue solid;
+          }
         input.login:focus+i.fa-user{
-            display: block;
-            left: 52px;
-        }
-        i.fa-key{
-            top:250px;
-            left: 10px;
+            opacity: 1;
+            left: 0;
         }
         input.password:focus+i.fa-key{
-            display: block;
-            left: 53px;
+            opacity: 1;
+            left: 0;
         }
-        .js{
-             display: block;
-             left: 53px;
-         }
     }
    
        
@@ -123,19 +108,14 @@ header{
         color: $blue;
         background-color:$gray;
         border: 1px solid $blue;
-        border-bottom-left-radius: 20px;
-        border-bottom-right-radius: 20px;
-        border-top-left-radius: 20px;
-        border-top-right-radius: 20px; 
+        border-radius: 20px; 
         transition: .5s;
        p{
         font-weight: 300;
         font-size: 18px;
         text-align: center;
-        padding: 0px;
         text-transform: uppercase;
         margin: 7px;
-
        }
    }
    button:hover{
