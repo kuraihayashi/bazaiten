@@ -13,11 +13,11 @@ body header {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: calc(100vh - 35px);
+  height: 100vh;
 }
 
 body header div.header {
-  height: calc(100vh - 35px);
+  height: 100vh;
   background-color: rgba(0, 0, 0, 0.4);
 }
 
@@ -148,19 +148,49 @@ body header div.header div.panel button:focus {
 }
 
 body footer {
-  height: 35px;
-  background-color: #252835;
-  text-align: center;
+  position: absolute;
+  height: 58px;
+  width: 100vw;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
-body footer a {
+body footer a.paragraph {
   text-decoration: none;
+  font-family: "Hind Guntur", sans-serif;
+  font-size: 18px;
   color: #8b8b8b;
-  line-height: 35px;
 }
 
-body footer a p {
-  font-size: 18px;
-  font-family: "Hind Guntur", sans-serif;
+body footer a.paragraph p {
+  text-align: center;
+  line-height: 58px;
+}
+
+body footer a.logo-footer {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: 94%;
+  width: 40px;
+  height: 40px;
+}
+
+body footer a.logo-footer img {
+  width: 40px;
+}
+
+body footer a.facebook-footer {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: 91%;
+}
+
+body footer a.facebook-footer i {
+  color: #3b5998;
+  font-size: 40px;
 }
 /*# sourceMappingURL=style.css.map */

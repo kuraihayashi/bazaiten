@@ -11,16 +11,16 @@ $font: 'Hind Guntur', sans-serif;
 }
 body{
     max-height: 100vh;
-    
+
 header{
     background-image: url(../images/cup-of-coffee-1280537_1920.jpg);
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: calc(100vh - 35px);
+    height: 100vh;
     div.header{
-    height: calc(100vh - 35px);
+    height: 100vh;
     background-color: rgba(0, 0, 0, 0.4);
     div.panel{
     border-top:2px solid $blue;
@@ -32,7 +32,7 @@ header{
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    
+
     form{
         div.tittle{
             h1{
@@ -64,7 +64,7 @@ header{
            position: absolute;
            padding: 15px 11px;
            margin-top: 1px;
-           margin-bottom: 1px; 
+           margin-bottom: 1px;
            background-color:$blue;
            color: $gray;
            border: black solid 0;
@@ -101,8 +101,7 @@ header{
             left: 0;
         }
     }
-   
-       
+
    button{
         position: absolute;
         cursor: pointer;
@@ -114,7 +113,7 @@ header{
         color: $blue;
         background-color:$gray;
         border: 1px solid $blue;
-        border-radius: 20px; 
+        border-radius: 20px;
         transition: .5s;
        p{
         font-weight: 300;
@@ -133,21 +132,55 @@ header{
    button:focus{
     outline: -webkit-focus-ring-color auto 0;
   }
-   
+
     }}}
+
 footer{
-    height: 35px;
-    background-color: $gray;
-    text-align: center;
-    a{
+    position: absolute;
+    height: 58px;
+    width: 100vw;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    a.paragraph{
         text-decoration: none;
+        font-family: $font;
+        font-size: 18px;
         color: $font-color;
-        line-height: 35px;
         p{
-            font-size: 18px;
-            font-family: $font;
-            
+            text-align: center;
+            line-height: 58px;
+    }}
+    
+    a.logo-footer{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        // left: 51%;
+        left: 94%;
+        width: 40px;
+        height: 40px;
+        img{
+            width: 40px;
         }
     }
+    a.facebook-footer{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        // left:47%;
+        left: 91%;
+        i{
+            color: #3b5998;
+            font-size: 40px;
+
+        }
+    }
+
 }
+
+
+
+
+
+
 }
