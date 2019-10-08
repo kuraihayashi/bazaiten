@@ -173,12 +173,12 @@ body footer a.logo-footer {
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   left: 94%;
-  width: 40px;
-  height: 40px;
+  width: 38px;
+  height: 38px;
 }
 
 body footer a.logo-footer img {
-  width: 40px;
+  width: 38px;
 }
 
 body footer a.facebook-footer {
@@ -191,6 +191,6 @@ body footer a.facebook-footer {
 
 body footer a.facebook-footer i {
   color: #3b5998;
-  font-size: 40px;
+  font-size: 38px;
 }
 /*# sourceMappingURL=style.css.map */
